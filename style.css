@@ -1,0 +1,154 @@
+/*
+    Google work sans font associated with CSS
+ */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&family=Dancing+Script:wght@500&family=Edu+NSW+ACT+Foundation&family=Edu+SA+Beginner:wght@700&family=Inter&family=Lobster&family=Merriweather&family=Noto+Sans&family=Open+Sans&family=Poppins:wght@400;500&family=Roboto:wght@500&family=Splash&family=Work+Sans&display=swap");
+
+/*
+    Common all styles
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+}
+
+/* 
+    HEADER SECTION AND NAVIGATION
+ */
+
+header {
+  background: rgba(255, 144, 14, 0.1);
+  /* box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.06); */
+  padding: 5.5px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav {
+  width: 80%;
+  height: 81px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > .logo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+  color: #131313;
+  cursor: pointer;
+}
+nav .links {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 18px;
+  align-items: center;
+}
+nav .links li {
+  list-style: none;
+}
+nav .links a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #424242;
+}
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+nav .icon-burger {
+  display: none;
+}
+
+
+
+/*
+    Hero/Top section styles
+ */
+
+
+
+
+
+/*.................................................................................*/
+/*
+    Rsponsive all styles star here,
+ */
+/*.................................................................................*/
+
+/*
+    Responsive for mobile all device
+ */
+
+@media screen and (max-width: 991px) {
+  nav {
+    width: 100%;
+    height: 100px;
+    padding: 0 17px;
+  }
+  nav .logo {
+    width: auto;
+    justify-content: center;
+    font-size: 19px;
+  }
+  nav .links {
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .links a {
+    font-size: 17px;
+    color: white;
+  }
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav .icon-burger > i {
+    font-size: 19px;
+    color: black;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+}
+
+/* 
+    Hero section responsive styles
+ */
