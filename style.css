@@ -3,6 +3,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&family=Dancing+Script:wght@500&family=Edu+NSW+ACT+Foundation&family=Edu+SA+Beginner:wght@700&family=Inter&family=Lobster&family=Merriweather&family=Noto+Sans&family=Open+Sans&family=Poppins:wght@400;500&family=Roboto:wght@500&family=Splash&family=Work+Sans&display=swap");
 
+
 /*
     Common all styles
  */
@@ -31,6 +32,8 @@
   cursor: pointer;
   color: #ffffff;
 }
+
+
 
 /* 
     HEADER SECTION AND NAVIGATION
@@ -94,6 +97,8 @@ nav .icon-burger {
   display: none;
 }
 
+
+
 /*
     Hero/Top section styles
  */
@@ -144,6 +149,9 @@ nav .icon-burger {
   width: 100%;
   border-radius: 8px;
 }
+
+
+
 
 /*
     Quick Features section styles
@@ -204,6 +212,9 @@ nav .icon-burger {
   color: #727272;
   padding: 0 59px 0 0;
 }
+
+
+
 
 /*
   Experience section styles
@@ -308,6 +319,9 @@ nav .icon-burger {
   font-size: 20px;
 }
 
+
+
+
 /*
    Some facts section styles
  */
@@ -370,6 +384,9 @@ nav .icon-burger {
   color: #727272;
 }
 
+
+
+
 /*
   Sponspore section styles
  */
@@ -405,6 +422,9 @@ nav .icon-burger {
 .sponspores img {
   width: 9%;
 }
+
+
+
 
 /*
     Login form section styles
@@ -497,6 +517,8 @@ nav .icon-burger {
   text-decoration: underline;
 }
 
+
+
 /*
    Foter section styles
  */
@@ -512,17 +534,28 @@ footer {
   padding: 5.5rem 0;
 }
 
+
+
+
+
+
+
+
 /*.................................................................................*/
 /*
     Rsponsive all styles star here,
  */
 /*.................................................................................*/
 
+
+
 /*
     Responsive for mobile all device
  */
 
 @media screen and (max-width: 688px) {
+
+
   /*
     All common features Responsive styles here
 */
@@ -531,6 +564,8 @@ footer {
     height: 40px;
     font-size: 15px;
   }
+
+
 
   /*
     Header and Navabar responsive Styles
@@ -586,6 +621,9 @@ footer {
     opacity: 0;
   }
 
+
+
+
   /* 
     Hero section responsive styles
  */
@@ -620,6 +658,9 @@ footer {
   .hero-contents .hero-img img {
     width: 100%;
   }
+
+
+
 
   /*
     Quick Fetures section responsive styles 
@@ -658,6 +699,9 @@ footer {
     text-align: center;
     padding: 0 6px;
   }
+
+
+
 
   /*
     Experience section rsponsive styles 
@@ -739,6 +783,9 @@ footer {
     font-size: 16px;
   }
 
+
+
+
   /*
     Some facts section responsive styles
    */
@@ -799,6 +846,9 @@ footer {
     font-size: 15px;
   }
 
+
+
+
   /*
     Sponspores section responsive styles 
    */
@@ -831,6 +881,9 @@ footer {
     width: 65%;
   }
 
+
+
+
   /* 
      Contact and login form section responsive styles
    */
@@ -861,6 +914,9 @@ footer {
     font-size: 0.7em;
   }
 
+
+
+  
   /*
      Footer section responsive styles 
    */
