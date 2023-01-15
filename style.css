@@ -255,7 +255,7 @@ nav .icon-burger {
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
-  padding: 30px 42px 30px 30px;
+  padding: 25px 39px 25px 25px;
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
@@ -389,7 +389,6 @@ nav .icon-burger {
 
   .hero-section {
     padding: 0px 0 37px 0;
-    /* margin-bottom: 5.5rem; */
   }
 
   .hero-contents {
@@ -457,10 +456,83 @@ nav .icon-burger {
     padding: 0 6px;
   }
 
-
-
   /*
     Experience section rsponsive styles 
    */
-   
+
+  .experience-section {
+    width: 100%;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 54px;
+  }
+
+  .experience-section .experience-contents {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 19px;
+  }
+
+  .experience-contents .experience-title {
+    padding-left: 0px;
+    border-left: 0;
+  }
+
+  .experience-contents .experience-title h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .experience-contents > p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 6px;
+  }
+
+  .experience-contents .experience-features {
+    gap: 15px;
+  }
+
+  .experience-features .experience {
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+  }
+
+  .experience h4 {
+    font-size: 17px;
+    text-align: center;
+  }
+  .experience p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .experience-section .experience-img-years {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: unset;
+  }
+  .experience-img-years img {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .experience-img-years .experience-year {
+    width: 165px;
+    height: 85px;
+    position: unset;
+  }
+
+  .experience-year h3 {
+    font-size: 25px;
+  }
+  .experience-year p {
+    font-size: 16px;
+  }
 }
