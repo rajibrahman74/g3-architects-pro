@@ -148,7 +148,7 @@ nav .icon-burger {
 }
 
 /*
-    Quick Features styles
+    Quick Features section styles
  */
 
 .quick-features-section {
@@ -165,7 +165,9 @@ nav .icon-burger {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
 }
-.quick-features-grid-cards .card img {
+
+.quick-features-grid-cards img {
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -313,7 +315,6 @@ nav .icon-burger {
 
   .hero-contents .hero-img img {
     width: 100%;
-    height: 260px;
   }
 
 
@@ -331,19 +332,17 @@ nav .icon-burger {
   }
 
   .quick-features-section .quick-features-grid-cards {
-    /* width: 50%; */
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-  }
-  .quick-features-grid-cards .card img {
     width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    place-items: center;
+    padding: 0 5px;
   }
-
-  .quick-features-section .quick-features-content {
-    /* width: 50%; */
+  .quick-features-grid-cards img {
+    width: 80%;
   }
-
   .quick-features-section .quick-features-content {
+    width: 100%;
     align-items: center;
     gap: 15px;
   }
@@ -354,9 +353,8 @@ nav .icon-burger {
   }
 
   .quick-features-content p {
-    font-weight: 400;
     font-size: 15px;
-    color: #727272;
-    padding: 0 59px 0 0;
+    text-align: center;
+    padding: 0 6px;
   }
 }
