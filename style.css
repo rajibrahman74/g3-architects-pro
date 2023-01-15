@@ -207,6 +207,60 @@ nav .icon-burger {
   padding: 0 59px 0 0;
 }
 
+/*
+  Experience section styles
+ */
+
+.experience-section {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  margin: 0 auto;
+}
+
+.experience-section .experience-contents {
+  width: 45%;
+}
+.experience-section .experience-img-years {
+  width: 55%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 0 0 77px 92px;
+  position: relative;
+}
+.experience-img-years img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.experience-img-years .experience-year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 150px;
+  background: #ff900e;
+  border-radius: 8px;
+  color: white;
+  position: absolute;
+  right: 58%;
+  top: 80%;
+}
+
+.experience-year h3 {
+  font-weight: 700;
+  font-size: 45px;
+}
+.experience-year p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+
+
 /*.................................................................................*/
 /*
     Rsponsive all styles star here,
@@ -316,9 +370,6 @@ nav .icon-burger {
   .hero-contents .hero-img img {
     width: 100%;
   }
-
-
-
 
   /*
     Quick Fetures section responsive styles 
