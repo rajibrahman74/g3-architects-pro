@@ -3,6 +3,8 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&family=Dancing+Script:wght@500&family=Edu+NSW+ACT+Foundation&family=Edu+SA+Beginner:wght@700&family=Inter&family=Lobster&family=Merriweather&family=Noto+Sans&family=Open+Sans&family=Poppins:wght@400;500&family=Roboto:wght@500&family=Splash&family=Work+Sans&display=swap");
 
+
+
 /*
     Common all styles
  */
@@ -31,6 +33,9 @@
   cursor: pointer;
   color: #ffffff;
 }
+
+
+
 
 /* 
     HEADER SECTION AND NAVIGATION
@@ -96,6 +101,8 @@ nav .icon-burger {
   display: none;
 }
 
+
+
 /*
     Hero/Top section styles
  */
@@ -146,6 +153,8 @@ nav .icon-burger {
   width: 100%;
   border-radius: 8px;
 }
+
+
 
 /*
     Quick Features section styles
@@ -206,6 +215,9 @@ nav .icon-burger {
   color: #727272;
   padding: 0 59px 0 0;
 }
+
+
+
 
 /*
   Experience section styles
@@ -310,6 +322,9 @@ nav .icon-burger {
   font-size: 20px;
 }
 
+
+
+
 /*
    Some facts section styles
  */
@@ -317,10 +332,9 @@ nav .icon-burger {
 .some-facts-section {
   display: flex;
   flex-direction: column;
-  /* align-items: start; */
   margin: 0 auto;
   gap: 6.25rem;
-  padding-bottom: 11.25rem;
+  padding-bottom: 6rem;
 }
 
 .some-facts-section .some-fact-content h3 {
@@ -373,13 +387,15 @@ nav .icon-burger {
   color: #727272;
 }
 
+
+
+
 /*
   Sponspore section styles
  */
 .sponspore-section {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   margin: 0 auto;
   gap: 3.125rem;
   padding-bottom: 8.125rem;
@@ -403,8 +419,112 @@ nav .icon-burger {
 
 .sponspore-section .sponspores {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
+.sponspores img {
+  width: 9%;
+}
+
+
+
+/*
+    Login form section styles
+ */
+
+.login-form {
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.login {
+  margin: 20px auto;
+  padding: 40px 50px;
+  max-height: 26.5rem;
+  max-width: 30%;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+}
+.login input {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 14px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  border: 1px solid #ff900e;
+  transition: 0.2s;
+}
+
+.login input[type="submit"] {
+  border: none;
+  background: #ff900e;
+  color: white;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.login h2 {
+  margin: 20px 0 0;
+  color: #ff900e;
+  font-size: 28px;
+}
+
+.login p {
+  margin-bottom: 40px;
+}
+
+.links {
+  display: table;
+  width: 100%;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.links a {
+  display: table-cell;
+  padding-top: 10px;
+}
+
+.links a:first-child {
+  text-align: left;
+}
+
+.links a:last-child {
+  text-align: right;
+}
+
+.login h2,
+.login p,
+.login a {
+  text-align: center;
+}
+
+.login a {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
 
 /*.................................................................................*/
 /*
@@ -412,11 +532,14 @@ nav .icon-burger {
  */
 /*.................................................................................*/
 
+
+
 /*
     Responsive for mobile all device
  */
 
 @media screen and (max-width: 688px) {
+
   /*
     All common features Responsive styles here
 */
@@ -425,6 +548,7 @@ nav .icon-burger {
     height: 40px;
     font-size: 15px;
   }
+
 
   /*
     Header and Navabar responsive Styles
@@ -480,6 +604,8 @@ nav .icon-burger {
     opacity: 0;
   }
 
+
+
   /* 
     Hero section responsive styles
  */
@@ -514,6 +640,8 @@ nav .icon-burger {
   .hero-contents .hero-img img {
     width: 100%;
   }
+
+
 
   /*
     Quick Fetures section responsive styles 
@@ -552,6 +680,8 @@ nav .icon-burger {
     text-align: center;
     padding: 0 6px;
   }
+
+
 
   /*
     Experience section rsponsive styles 
@@ -633,6 +763,8 @@ nav .icon-burger {
     font-size: 16px;
   }
 
+
+
   /*
     Some facts section responsive styles
    */
@@ -695,7 +827,6 @@ nav .icon-burger {
 
 
 
-
   /*
     Sponspores section responsive styles 
    */
@@ -726,5 +857,37 @@ nav .icon-burger {
   }
   .sponspores img {
     width: 65%;
+  }
+
+
+
+  /* 
+     Contact and login form section responsive styles
+   */
+
+  .login-form {
+    width: 100%;
+    padding: 0 1.5rem 5rem 1.5rem;
+  }
+
+  .login {
+    padding: 40px 50px;
+    max-width: 100%;
+  }
+  .login input {
+    padding: 14px 12px;
+    font-size: 14px;
+  }
+
+  .login h2 {
+    font-size: 22px;
+  }
+
+  .login p {
+    margin-bottom: 30px;
+  }
+
+  .login a {
+    font-size: 0.7em;
   }
 }
