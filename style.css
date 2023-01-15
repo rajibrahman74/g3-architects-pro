@@ -219,18 +219,69 @@ nav .icon-burger {
 }
 
 .experience-section .experience-contents {
-  width: 45%;
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
 }
+
+.experience-contents .experience-title {
+  padding-left: 21px;
+  border-left: 6px solid #ff900e;
+}
+
+.experience-contents .experience-title h3 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #131313;
+}
+
+.experience-contents > p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+
+.experience-contents .experience-features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.experience-features .experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 30px 42px 30px 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.experience h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+}
+.experience p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+
 .experience-section .experience-img-years {
-  width: 55%;
+  width: 60%;
   display: flex;
   align-items: flex-start;
   justify-content: end;
-  padding: 0 0 77px 92px;
   position: relative;
 }
 .experience-img-years img {
-  width: 100%;
+  width: 90%;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -245,8 +296,8 @@ nav .icon-burger {
   border-radius: 8px;
   color: white;
   position: absolute;
-  right: 58%;
-  top: 80%;
+  right: 65%;
+  top: 89%;
 }
 
 .experience-year h3 {
@@ -257,9 +308,6 @@ nav .icon-burger {
   font-weight: 500;
   font-size: 20px;
 }
-
-
-
 
 /*.................................................................................*/
 /*
@@ -408,4 +456,11 @@ nav .icon-burger {
     text-align: center;
     padding: 0 6px;
   }
+
+
+
+  /*
+    Experience section rsponsive styles 
+   */
+   
 }
