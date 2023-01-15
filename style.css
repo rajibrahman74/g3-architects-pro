@@ -3,8 +3,6 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&family=Dancing+Script:wght@500&family=Edu+NSW+ACT+Foundation&family=Edu+SA+Beginner:wght@700&family=Inter&family=Lobster&family=Merriweather&family=Noto+Sans&family=Open+Sans&family=Poppins:wght@400;500&family=Roboto:wght@500&family=Splash&family=Work+Sans&display=swap");
 
-
-
 /*
     Common all styles
  */
@@ -34,17 +32,12 @@
   color: #ffffff;
 }
 
-
-
-
 /* 
     HEADER SECTION AND NAVIGATION
  */
 
 header {
-  /* background: rgba(255, 144, 14, 0.1); */
   background: white;
-  /* box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.06); */
   padding: 5.5px 0;
   position: sticky;
   top: 0;
@@ -101,8 +94,6 @@ nav .icon-burger {
   display: none;
 }
 
-
-
 /*
     Hero/Top section styles
  */
@@ -153,8 +144,6 @@ nav .icon-burger {
   width: 100%;
   border-radius: 8px;
 }
-
-
 
 /*
     Quick Features section styles
@@ -215,9 +204,6 @@ nav .icon-burger {
   color: #727272;
   padding: 0 59px 0 0;
 }
-
-
-
 
 /*
   Experience section styles
@@ -322,9 +308,6 @@ nav .icon-burger {
   font-size: 20px;
 }
 
-
-
-
 /*
    Some facts section styles
  */
@@ -387,9 +370,6 @@ nav .icon-burger {
   color: #727272;
 }
 
-
-
-
 /*
   Sponspore section styles
  */
@@ -425,8 +405,6 @@ nav .icon-burger {
 .sponspores img {
   width: 9%;
 }
-
-
 
 /*
     Login form section styles
@@ -519,12 +497,20 @@ nav .icon-burger {
   text-decoration: underline;
 }
 
+/*
+   Foter section styles
+ */
 
-
-
-
-
-
+footer {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: #424242;
+  background: #fff4e7;
+  border-radius: 8px;
+  padding: 5.5rem 0;
+}
 
 /*.................................................................................*/
 /*
@@ -532,14 +518,11 @@ nav .icon-burger {
  */
 /*.................................................................................*/
 
-
-
 /*
     Responsive for mobile all device
  */
 
 @media screen and (max-width: 688px) {
-
   /*
     All common features Responsive styles here
 */
@@ -548,7 +531,6 @@ nav .icon-burger {
     height: 40px;
     font-size: 15px;
   }
-
 
   /*
     Header and Navabar responsive Styles
@@ -604,8 +586,6 @@ nav .icon-burger {
     opacity: 0;
   }
 
-
-
   /* 
     Hero section responsive styles
  */
@@ -640,8 +620,6 @@ nav .icon-burger {
   .hero-contents .hero-img img {
     width: 100%;
   }
-
-
 
   /*
     Quick Fetures section responsive styles 
@@ -680,8 +658,6 @@ nav .icon-burger {
     text-align: center;
     padding: 0 6px;
   }
-
-
 
   /*
     Experience section rsponsive styles 
@@ -763,8 +739,6 @@ nav .icon-burger {
     font-size: 16px;
   }
 
-
-
   /*
     Some facts section responsive styles
    */
@@ -825,8 +799,6 @@ nav .icon-burger {
     font-size: 15px;
   }
 
-
-
   /*
     Sponspores section responsive styles 
    */
@@ -859,8 +831,6 @@ nav .icon-burger {
     width: 65%;
   }
 
-
-
   /* 
      Contact and login form section responsive styles
    */
@@ -889,5 +859,15 @@ nav .icon-burger {
 
   .login a {
     font-size: 0.7em;
+  }
+
+  /*
+     Footer section responsive styles 
+   */
+
+  footer {
+    width: 100%;
+    font-size: 14px;
+    padding: 5.5rem 1rem;
   }
 }
