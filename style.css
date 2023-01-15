@@ -373,6 +373,39 @@ nav .icon-burger {
   color: #727272;
 }
 
+/*
+  Sponspore section styles
+ */
+.sponspore-section {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 0 auto;
+  gap: 3.125rem;
+  padding-bottom: 8.125rem;
+}
+
+.sponspore-section .sponspore-contents h3 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 1.5rem;
+}
+
+.sponspore-contents p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #727272;
+  padding: 0 20.375rem;
+}
+
+.sponspore-section .sponspores {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*.................................................................................*/
 /*
     Rsponsive all styles star here,
@@ -383,7 +416,7 @@ nav .icon-burger {
     Responsive for mobile all device
  */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 688px) {
   /*
     All common features Responsive styles here
 */
@@ -608,8 +641,8 @@ nav .icon-burger {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 6.25rem;
-    padding-bottom: 0 19px 5.25rem 19px;
+    gap: 3rem;
+    padding: 0 19px 5.25rem 19px;
   }
 
   .some-facts-section .some-fact-content h3 {
@@ -652,10 +685,46 @@ nav .icon-burger {
   .finished-work h4 {
     font-size: 1.5rem;
     text-align: center;
+    font-weight: bolder;
   }
 
   .finished-work p {
     text-align: center;
     font-size: 15px;
+  }
+
+
+
+
+  /*
+    Sponspores section responsive styles 
+   */
+
+  .sponspore-section {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-bottom: 4.125rem;
+  }
+
+  .sponspore-section .sponspore-contents h3 {
+    font-size: 23px;
+    margin-bottom: 1rem;
+  }
+
+  .sponspore-contents p {
+    font-size: 15px;
+    padding: 0 6px;
+  }
+
+  .sponspore-section .sponspores {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .sponspores img {
+    width: 65%;
   }
 }
