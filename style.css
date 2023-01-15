@@ -20,6 +20,18 @@
   width: 100%;
 }
 
+.golden-btn {
+  width: 135px;
+  height: 45px;
+  border: none;
+  background: #ff900e;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
 /* 
     HEADER SECTION AND NAVIGATION
  */
@@ -88,7 +100,6 @@ nav .icon-burger {
     Hero/Top section styles
  */
 .hero-section {
-  height: 100%;
   padding: 100px 0 37px 0;
   background: rgba(255, 144, 14, 0.1);
   margin-bottom: 5.5rem;
@@ -124,18 +135,6 @@ nav .icon-burger {
   padding: 0 176px;
 }
 
-.hero-texts button {
-  width: 135px;
-  height: 45px;
-  border: none;
-  background: #ff900e;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 17px;
-  cursor: pointer;
-  color: #ffffff;
-}
-
 .hero-contents .hero-img {
   display: flex;
   justify-content: center;
@@ -146,6 +145,64 @@ nav .icon-burger {
 .hero-contents .hero-img img {
   width: 100%;
   border-radius: 8px;
+}
+
+/*
+    Quick Features styles
+ */
+
+.quick-features-section {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin: 0 auto;
+  padding-bottom: 8.125rem;
+}
+
+.quick-features-section .quick-features-grid-cards {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+.quick-features-grid-cards .card img {
+  width: 100%;
+}
+
+.quick-features-section .quick-features-content {
+  width: 50%;
+}
+
+.quick-features-section .quick-features-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.quick-features-content h2 {
+  font-weight: 500;
+  font-size: 45px;
+}
+.quick-features-content h2 .light-text {
+  color: #727272;
+}
+
+.quick-features-content h2 .dark-text {
+  color: #131313;
+  font-weight: 700;
+}
+
+.quick-features-content h2 .golden-text {
+  color: #ff900e;
+  font-weight: 700;
+}
+
+.quick-features-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  padding: 0 59px 0 0;
 }
 
 /*.................................................................................*/
@@ -159,6 +216,19 @@ nav .icon-burger {
  */
 
 @media screen and (max-width: 991px) {
+  /*
+    All common features Responsive styles here
+*/
+  .golden-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  /*
+    Header and Navabar responsive Styles
+ */
+
   nav {
     width: 100%;
     height: 100px;
@@ -214,47 +284,79 @@ nav .icon-burger {
  */
 
   .hero-section {
-    /* height: 100%; */
-    padding: 60px 0 37px 0;
-    margin-bottom: 5.5rem;
+    padding: 0px 0 37px 0;
+    /* margin-bottom: 5.5rem; */
   }
 
-  /* .hero-contents {
+  .hero-contents {
     width: 100%;
-    align-items: center;
-    margin: 0 auto;
-  } */
+    flex-direction: column-reverse;
+  }
 
   .hero-contents .hero-texts {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     gap: 15px;
     padding: 0 17px;
   }
 
   .hero-texts h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .hero-texts p {
-    font-weight: 400;
     font-size: 15px;
-    padding: 0 10px;
-  }
-
-  .hero-texts button {
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
+    padding: 0 6px;
   }
 
   .hero-contents .hero-img {
-    width: 100%;
+    padding: 0 5px;
   }
 
   .hero-contents .hero-img img {
     width: 100%;
-    height: 100%
+    height: 260px;
+  }
+
+
+
+
+  /*
+    Quick Fetures section responsive styles 
+   */
+
+  .quick-features-section {
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 4.125rem;
+  }
+
+  .quick-features-section .quick-features-grid-cards {
+    /* width: 50%; */
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .quick-features-grid-cards .card img {
+    width: 100%;
+  }
+
+  .quick-features-section .quick-features-content {
+    /* width: 50%; */
+  }
+
+  .quick-features-section .quick-features-content {
+    align-items: center;
+    gap: 15px;
+  }
+
+  .quick-features-content h2 {
+    font-size: 30.4px;
+    text-align: center;
+  }
+
+  .quick-features-content p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #727272;
+    padding: 0 59px 0 0;
   }
 }
