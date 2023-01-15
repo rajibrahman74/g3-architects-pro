@@ -334,7 +334,7 @@ nav .icon-burger {
   flex-direction: column;
   margin: 0 auto;
   gap: 6.25rem;
-  padding-bottom: 6rem;
+  padding-bottom: 9rem;
 }
 
 .some-facts-section .some-fact-content h3 {
@@ -398,7 +398,7 @@ nav .icon-burger {
   flex-direction: column;
   margin: 0 auto;
   gap: 3.125rem;
-  padding-bottom: 8.125rem;
+  padding-bottom: 6.5rem;
 }
 
 .sponspore-section .sponspore-contents h3 {
